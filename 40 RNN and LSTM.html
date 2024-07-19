@@ -1,3 +1,150 @@
+Recurrent Neural Network (RNN) Theory
+RNNs are a class of neural networks designed for sequential data, such as time series. They have loops allowing information to persist, which helps in capturing temporal dependencies.
+
+RNN Formula
+An RNN processes an input sequence step-by-step, maintaining a hidden state vector that captures information from previous steps. The core equations for an RNN at time step 
+𝑡
+t are:
+
+Hidden State Update:
+ℎ
+𝑡
+=
+𝜎
+(
+𝑊
+ℎ
+⋅
+𝑥
+𝑡
++
+𝑈
+ℎ
+⋅
+ℎ
+𝑡
+−
+1
++
+𝑏
+ℎ
+)
+h 
+t
+​
+ =σ(W 
+h
+​
+ ⋅x 
+t
+​
+ +U 
+h
+​
+ ⋅h 
+t−1
+​
+ +b 
+h
+​
+ )
+
+ℎ
+𝑡
+h 
+t
+​
+ : Hidden state at time step 
+𝑡
+t
+𝑥
+𝑡
+x 
+t
+​
+ : Input at time step 
+𝑡
+t
+ℎ
+𝑡
+−
+1
+h 
+t−1
+​
+ : Hidden state from the previous time step
+𝑊
+ℎ
+W 
+h
+​
+ , 
+𝑈
+ℎ
+U 
+h
+​
+ : Weight matrices for the input and hidden state
+𝑏
+ℎ
+b 
+h
+​
+ : Bias vector
+𝜎
+σ: Activation function (e.g., tanh or ReLU)
+Output (optional, if needed at each time step):
+𝑦
+𝑡
+=
+𝜎
+(
+𝑊
+𝑦
+⋅
+ℎ
+𝑡
++
+𝑏
+𝑦
+)
+y 
+t
+​
+ =σ(W 
+y
+​
+ ⋅h 
+t
+​
+ +b 
+y
+​
+ )
+
+𝑦
+𝑡
+y 
+t
+​
+ : Output at time step 
+𝑡
+t
+𝑊
+𝑦
+W 
+y
+​
+ : Weight matrix for the output
+𝑏
+𝑦
+b 
+y
+​
+ : Bias vector
+Intuition
+Memory: RNNs can remember previous inputs due to their hidden state, which gets updated with each new input.
+Sequential Processing: Unlike feedforward networks, RNNs process sequences of data, making them suitable for tasks like time series forecasting, natural language processing, and more.
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
