@@ -1,3 +1,43 @@
+Convolutional Neural Networks (CNN)
+CNNs are a class of deep neural networks commonly used for analyzing visual imagery. They are specifically designed to process data with a grid-like topology, such as images.
+
+Key Components of CNNs
+Convolutional Layers:
+
+Apply a set of filters (kernels) to the input image.
+Perform convolution operations to extract features.
+Preserve spatial relationships by learning image features using small squares of input data.
+Output a set of feature maps.
+Activation Function:
+
+Typically use ReLU (Rectified Linear Unit) to introduce non-linearity.
+Helps the network learn complex patterns.
+Pooling Layers:
+
+Reduce the spatial dimensions of the feature maps.
+Perform down-sampling using operations like max pooling.
+Reduce computational load and control overfitting.
+Flattening:
+
+Converts the 2D feature maps into a 1D feature vector.
+Prepares the data for the fully connected layers.
+Fully Connected (Dense) Layers:
+
+Perform high-level reasoning using the features extracted by convolutional layers.
+Combine features to predict the final output classes.
+Output Layer:
+
+Uses a softmax activation function for multi-class classification.
+Outputs probabilities for each class.
+Benefits of CNNs
+Parameter Sharing: Reduces the number of parameters, making the network easier to train and less prone to overfitting.
+Local Connectivity: Ensures that the model learns spatial hierarchies of features.
+Translation Invariance: Recognizes objects in images regardless of their position.
+Applications
+Image Classification: Assigning a label to an entire image.
+Object Detection: Identifying objects within an image and their locations.
+Segmentation: Partitioning an image into segments to highlight areas of interest.
+Other Domains: Also used in audio processing, natural language processing, and video analysis.
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
