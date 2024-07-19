@@ -1,3 +1,90 @@
+Theory of Regularization
+Regularization in Machine Learning:
+
+Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. Overfitting occurs when a model learns not only the underlying patterns in the training data but also the noise, leading to poor generalization to new, unseen data.
+
+Types of Regularization:
+
+L1 Regularization (Lasso):
+
+Adds the absolute value of the coefficients to the loss function.
+Encourages sparsity in the model (many coefficients become zero), which can lead to simpler models.
+L2 Regularization (Ridge):
+
+Adds the squared value of the coefficients to the loss function.
+Encourages smaller coefficient values, which can help in reducing model complexity.
+Elastic Net:
+
+Combines both L1 and L2 regularization.
+Provides a balance between sparsity and coefficient shrinkage.
+Mathematical Formulation:
+
+For a linear model with parameters (weights) 
+𝜃
+θ:
+
+L1 Regularization:
+
+Loss
+=
+MSE
++
+𝜆
+∑
+𝑖
+∣
+𝜃
+𝑖
+∣
+Loss=MSE+λ 
+i
+∑
+​
+ ∣θ 
+i
+​
+ ∣
+where 
+𝜆
+λ is the regularization strength.
+
+L2 Regularization:
+
+Loss
+=
+MSE
++
+𝜆
+∑
+𝑖
+𝜃
+𝑖
+2
+Loss=MSE+λ 
+i
+∑
+​
+ θ 
+i
+2
+​
+ 
+Regularization in Neural Networks:
+
+In the context of neural networks, regularization can be applied to the weights of the network layers. This helps in controlling the complexity of the network and improves its generalization ability.
+
+Implementing Regularization:
+
+Weight Regularization:
+
+Adding L1 or L2 penalties to the weights of the neural network layers. This is done using the kernel_regularizer parameter in Keras layers.
+Dropout:
+
+Randomly setting a fraction of input units to 0 during training to prevent over-reliance on specific paths and promote robustness.
+Impact of Regularization:
+
+Reduces Overfitting: By penalizing large weights, regularization prevents the model from becoming too complex and overfitting the training data.
+Improves Generalization: Regularization helps in building models that generalize better to new, unseen data.
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
