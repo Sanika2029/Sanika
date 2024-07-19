@@ -1,3 +1,46 @@
+Deep Neural Networks (DNNs):
+
+DNNs are a class of artificial neural networks with multiple layers between the input and output layers. These networks can model complex patterns and relationships in data due to their depth (multiple hidden layers) and capacity.
+
+Key Concepts:
+
+Neurons:
+
+Basic units of a neural network. Each neuron receives input, applies a linear transformation, and passes the result through a non-linear activation function.
+Layers:
+
+DNNs consist of multiple layers:
+Input Layer: Receives the input data.
+Hidden Layers: Multiple layers where each neuron is connected to neurons in the previous and next layers. These layers perform feature extraction and transformation.
+Output Layer: Produces the final output of the network.
+Activation Functions:
+
+Introduce non-linearity into the network, allowing it to learn complex patterns. Common activation functions include ReLU, Sigmoid, and Tanh.
+Weights and Biases:
+
+Parameters that the network learns during training. Weights determine the strength of connections between neurons, and biases allow the model to fit the data better.
+Forward Propagation:
+
+The process of passing input data through the network, layer by layer, to obtain the output.
+Loss Function:
+
+A metric that quantifies the difference between the predicted output and the actual output. Common loss functions include mean squared error (MSE) for regression tasks and categorical cross-entropy for classification tasks.
+Backpropagation:
+
+An algorithm used to update the weights and biases in the network. It calculates the gradient of the loss function with respect to each parameter, propagates these gradients backward through the network, and updates the parameters using gradient descent.
+Optimization Algorithms:
+
+Methods used to minimize the loss function and update the network parameters. Common optimizers include Stochastic Gradient Descent (SGD), Adam, and RMSprop.
+Advantages of DNNs:
+
+Feature Learning: DNNs automatically learn features from raw data, reducing the need for manual feature engineering.
+Expressive Power: The depth of DNNs allows them to model complex, non-linear relationships in data.
+Versatility: DNNs can be applied to a wide range of tasks, including image recognition, natural language processing, and time series prediction.
+Challenges:
+
+Overfitting: DNNs can overfit the training data, especially when the dataset is small or noisy. Regularization techniques such as dropout and early stopping can help mitigate this.
+Computational Cost: Training DNNs can be computationally intensive and require significant resources, including powerful GPUs.
+Interpretability: DNNs are often considered "black boxes" due to their complexity, making it difficult to interpret their decisions.
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
